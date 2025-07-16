@@ -1,0 +1,23 @@
+{
+  "name": "hofmann-ui-kit",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/pages/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel": "^2.15.4",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^2.0.1",
+    "prettier": "3.6.2",
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "posthtml-doctype": "^1.1.0"
+  }
+}

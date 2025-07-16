@@ -1,0 +1,16 @@
+/*HEADER*/
+.header{
+  position: relative;
+  z-index: 2;
+  display: flex ;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/*LOGO*/
+.logo{
+    margin: 0;
+    font-size: 36px;
+    color: #EBCB80;
+}
