@@ -1,0 +1,5 @@
+
+@use "../abstracts/" as *;
+.fill-icons svg path{
+    fill:$light-yellow;
+}

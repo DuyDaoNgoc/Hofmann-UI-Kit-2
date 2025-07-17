@@ -1,2 +1,4 @@
-@use "reset";
-@use "boilerplate";
+@forward "reset";
+@forward "boilerplate";
+@forward "root";
+@forward "typograpy"

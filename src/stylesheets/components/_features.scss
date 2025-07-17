@@ -1,0 +1,43 @@
+.main-advantages{
+    gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+.advantages{
+      width: 300px;
+    display: flex
+;padding: 15px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+}
+.mac{
+  width: 802px;
+  height: 464px;
+}
+.padding{
+  padding: 20px;
+}
+
+.div-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width:500px) {
+
+.main-advantages{
+  display: flex;
+  flex-direction: column;
+}
+.mac{
+  width: 290px;
+  height: 168.32px;
+}
+}
