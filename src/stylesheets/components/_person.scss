@@ -1,0 +1,47 @@
+.card-bg{
+        width: 40%;
+    display: flex
+;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/*GIRD TEMPLATE*/
+.grid-template{
+   grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: center;
+    display: grid
+;
+    align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    .grid-template{
+        grid-template: 1fr 1fr 1fr /1fr;
+    }
+    
+}
+
+/*BORDER RADIUS*/
+.person-border-radius-img{
+width: 96px;
+height: 96px;
+border-radius: 50px;
+}
+@media screen and (max-width:1000px) {
+    /*BORDER RADIUS*/
+    .person-border-radius-img{
+width: 64px;
+height: 64px;
+
+}
+}
+
+@media screen and (max-width:500px) {
+    /*BORDER RADIUS*/
+    .person-border-radius-img{
+width: 48px;
+height: 48px;
+
+}
+}

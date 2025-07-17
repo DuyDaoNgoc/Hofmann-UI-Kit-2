@@ -1,5 +1,13 @@
 
 @use "../abstracts/" as *;
+
 .fill-icons svg path{
     fill:$light-yellow;
+}
+
+@media screen and (max-width:1000px) {
+    .fill-icons svg{
+    width: 18px;
+    height: 18px;
+}
 }
