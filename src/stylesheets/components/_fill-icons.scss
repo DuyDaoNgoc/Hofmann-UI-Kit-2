@@ -1,9 +1,22 @@
 @use "../abstracts/" as *;
+.background-silver{
+background: #4B4B4B;
+color: white;
+}
+.background-light-yellow{
+  background: #EBCB80;
+}
+.silver{
+  color: #4B4B4B;
+}
+.light-yellow{
+  color: #EBCB80;
+}
+
 
 .fill-icons svg path {
   fill: $light-yellow;
 }
-
 @media screen and (max-width: 1000px) {
   .fill-icons svg {
     width: 18px;

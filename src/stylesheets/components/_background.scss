@@ -3,6 +3,7 @@
   background: #f6f6f6;
   width: 100%;
   height: auto;
+  padding: 68px;
 }
 
 .wd-hg {
@@ -41,6 +42,7 @@
   position: relative;
   top: 33%;
 }
+
 /*HAMBUGER*/
 .hambuger {
   display: none;
@@ -82,9 +84,17 @@
   cursor: pointer;
   box-shadow: 0px 8px 16px 0px #00000030;
 }
+.main-video:nth-child(2){
+  box-shadow: none;
+  margin: 40px auto;
+  padding: 20px;
+  position: relative;
+      height: 393px;
+  justify-content: space-around;
+}
 /*VIDEO IMG*/
 .video-frame {
-  width: 100%;
+  width: 100% !important;
 }
 @media (max-width: 1000px) {
   .flex-content:nth-child(2) {
@@ -111,7 +121,10 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 685px) {
+  .main-video:nth-child(2){
+   
+  }
   .flex-content {
     width: 64% !important;
   }
