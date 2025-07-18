@@ -14,7 +14,6 @@ Appy my knowledge about HTML/CSS and SASS to design a basic website.
   Website can view in all devices by responsive.
 </li>
 <li>
-  
  A beautiful design of website and it can run smooth.
 </li>
 
