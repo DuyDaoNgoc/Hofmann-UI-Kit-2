@@ -1,22 +1,25 @@
 @use "../abstracts/" as *;
 
-
 @font-face {
-    font-family: "Roboto Regular";
-    src:local("Roboto Regular") , local("Roboto Regular"),
+  font-family: "Roboto Regular";
+  src:
+    local("Roboto Regular"),
+    local("Roboto Regular"),
     url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
-    font-display: swap;
+  font-display: swap;
 }
 @font-face {
-    font-family:"Roboto Bold" ;
-    src:local("Roboto Bold") ,local("Roboto Bold"),
+  font-family: "Roboto Bold";
+  src:
+    local("Roboto Bold"),
+    local("Roboto Bold"),
     url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
-font-display: swap;
+  font-display: swap;
 }
 
-body{
-    font-family: $primary-font ;
-    width: 100%;
+body {
+  font-family: $regular-font;
+  width: 100%;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
