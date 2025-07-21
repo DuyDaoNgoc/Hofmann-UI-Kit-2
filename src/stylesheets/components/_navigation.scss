@@ -1,12 +1,11 @@
 /*NAVIGATION*/
 .main-nav-list {
-text-transform: uppercase;
-    gap: 49px;
-    font-size: 18px;
-    height: 22px;
-    display: flex
-;
-    align-items: center;
+  text-transform: uppercase;
+  gap: 49px;
+  font-size: 18px;
+  height: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .li {
@@ -25,20 +24,21 @@ text-transform: uppercase;
 /*ICONS*/
 .main-list-icons {
   display: flex;
+  align-items: center;
 }
-.gap{
-    gap: 32.94px;
+.gap {
+  gap: 32.94px;
+  margin-top: 25px;
 }
-.gap-medium{
-    gap:42px;
+.gap-medium {
+  gap: 42px;
 }
 @media (max-width: 1000px) {
-    .gap-medium{
-        gap: 25px;
-    }
+  .gap-medium {
+    gap: 25px;
+  }
   .main-nav-list {
     font-size: 12px;
-
   }
 }
 
@@ -50,9 +50,8 @@ text-transform: uppercase;
     font-size: 20px !important;
   }
   .hambuger {
-cursor: pointer;
+    cursor: pointer;
 
-        display: block;
-
+    display: block;
   }
 }

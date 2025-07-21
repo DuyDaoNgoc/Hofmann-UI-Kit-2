@@ -7,13 +7,13 @@
 
 /*GIRD TEMPLATE*/
 .grid-template {
-    grid-template: 1fr 1fr / 1fr 1fr;
-    place-items: center;
-    display: grid
-;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  place-items: center;
+  display: grid;
+  margin-top: 29px !important;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 685px) {
   .grid-template {
@@ -25,6 +25,7 @@
 .person-border-radius-img {
   width: 96px;
   height: 96px;
+  border: 2px solid #e6e6e6;
   border-radius: 50px;
 }
 @media screen and (max-width: 1000px) {
@@ -35,7 +36,7 @@
   }
 }
 @media screen and (max-width: 685px) {
-  .box-width{
+  .box-width {
     padding: 15px;
   }
   /*BORDER RADIUS*/

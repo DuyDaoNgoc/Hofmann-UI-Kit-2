@@ -1,0 +1,45 @@
+<section>
+    <h3 class="title section">Portfolio</h3>
+    <div class="main-project-card">
+        <!--project 1-->
+        <figure class="project-card">
+          <figcaption>project-card 1</figcaption>
+          <img src="../assets/imgs/project/project-card-1.png" alt="">
+        </figure>
+          <!--project 2-->
+          <figure class="project-card">
+          <figcaption>project-card 2</figcaption>
+          <img src="../assets/imgs/project/project-card-2.png" alt="">
+        </figure>
+          <!--project 3-->
+          <figure class="project-card">
+          <figcaption>project-card 3</figcaption>
+          <img src="../assets/imgs/project/project-card-3.png" alt="">
+        </figure>
+          <!--project 4-->
+          <figure class="project-card">
+          <figcaption>project-card 4</figcaption>
+          <img src="../assets/imgs/project/project-card-4.png" alt="">
+        </figure>
+          <!--project 5-->
+      <figure class="project-card">
+          <figcaption>project-card 5</figcaption>
+          <img src="../assets/imgs/project/project-card-5.png" alt="">
+        </figure>
+
+            <!--project 6-->
+                  <figure class="project-card">
+          <figcaption>project-card 6</figcaption>
+          <img src="../assets/imgs/project/project-card-6.png" alt="">
+        </figure>
+        <div class="project-card">
+             <h3>
+                Scenery Photos
+             </h3>
+             <p>BY EVGENY METILAN</p>
+
+             <h3>Wild
+Nature</h3>
+        </div>
+    </div>
+</section>

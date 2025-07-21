@@ -15,6 +15,11 @@
   color: #ebcb80;
 }
 
-.logo:nth-child(2){
+.logo:nth-child(2) {
   font-size: 12px;
+}
+@media screen and (max-width: 685px) {
+  .logo {
+    font-size: 20px;
+  }
 }
