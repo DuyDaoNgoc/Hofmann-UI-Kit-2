@@ -1,7 +1,12 @@
-.main-project-card{
-display: grid;
-grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+.main-project-card {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+  max-width: 780px;
+  margin: 0 auto;
 }
-.project-card{
+.project-card img {
+  width: 100%;
+  max-height: 380px;
 
+  object-fit: cover;
 }

@@ -1,5 +1,6 @@
 .font-content {
   font-size: 18px;
+  margin-bottom: 27px;
 }
 .section {
   margin-top: 80px;
@@ -43,7 +44,7 @@
   margin-bottom: 24px;
 }
 .line-height-2 {
-  line-height: 24px;
+  line-height: 18px;
 }
 .text-3::before {
   content: "$";
@@ -94,7 +95,7 @@
   .font-content-3 {
     font-size: 12px;
   }
-  .gap {
+  .list-style {
     gap: 15px;
   }
   .font-content {

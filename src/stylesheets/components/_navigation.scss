@@ -26,15 +26,15 @@
   display: flex;
   align-items: center;
 }
-.gap {
+.list-style {
   gap: 32.94px;
   margin-top: 25px;
 }
-.gap-medium {
+.medium {
   gap: 42px;
 }
 @media (max-width: 1000px) {
-  .gap-medium {
+  .medium {
     gap: 25px;
   }
   .main-nav-list {

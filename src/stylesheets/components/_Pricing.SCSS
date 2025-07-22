@@ -2,7 +2,7 @@
   box-shadow: none;
   justify-content: space-around;
   text-align: center;
-  height: 393px;
+  height: 436px;
   display: flex;
   margin: 40px auto;
   padding: 20px;
@@ -13,7 +13,7 @@
   border-radius: 8px;
   width: 100%;
   padding: 20px;
-  height: auto;
+  height: 396px;
   max-width: 270px;
   position: relative;
 }
@@ -25,7 +25,7 @@
   width: 100%;
   position: absolute;
   border-radius: 8px;
-  height: 354px;
+  height: 396px;
   left: 0;
   top: 0;
 }
@@ -35,7 +35,7 @@
   content: "";
   box-shadow: 0px 8px 16px 0px #00000033;
   width: 100%;
-  height: 354px;
+  height: 396px;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -51,7 +51,7 @@
     rgba(255, 255, 255, 0.0001) 100%
   );
   width: 100%;
-  height: 354px;
+  height: 396px;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -63,7 +63,7 @@
   content: "";
   box-shadow: 0px 8px 16px 0px #00000033;
   width: 100%;
-  height: 354px;
+  height: 396px;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -81,7 +81,7 @@
   background-blend-mode: multiply;
 
   width: 100%;
-  height: 354px;
+  height: 396px;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -94,7 +94,7 @@
   box-shadow: 0px 1px 1px 0px #00000080;
 
   width: 100%;
-  height: 354px;
+  height: 396px;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -156,17 +156,17 @@
     max-width: 188px;
   }
   .card:nth-child(1)::before {
-    height: 353px;
+    height: 396px;
   }
   .card:nth-child(3)::before {
-    height: 353px;
+    height: 396px;
   }
   .card:nth-child(3)::after {
-    height: 353px;
+    height: 396px;
   }
 
   .card:nth-child(2)::before {
-    height: 353px;
+    height: 396px;
   }
 }
 
@@ -178,7 +178,7 @@
     max-width: 212px;
   }
   .card:nth-child(1)::before {
-    height: 343px;
+    height: 396px;
   }
   .card:nth-child(3) {
     z-index: 2;
@@ -186,7 +186,7 @@
     top: 8px;
   }
   .card:nth-child(3)::before {
-    height: 343px;
+    height: 396px;
   }
 
   .card:nth-child(2) {
@@ -196,6 +196,6 @@
     top: 45px;
   }
   .card:nth-child(2)::before {
-    height: 337px;
+    height: 396px;
   }
 }
