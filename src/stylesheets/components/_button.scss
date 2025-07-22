@@ -9,13 +9,13 @@
   position: relative;
   z-index: 2;
 }
-
-.btn:active {
-    color: #fff;
-    width: 32%;
-    height: 42px;
-    box-shadow: -1px 1px 25px 6px;
+.btn--active:active {
+  color: #fff;
+  width: 32%;
+  height: 42px;
+  box-shadow: -1px 1px 25px 6px;
 }
+
 @media screen and (max-width: 1000px) {
   .btn {
     font-size: 11px;

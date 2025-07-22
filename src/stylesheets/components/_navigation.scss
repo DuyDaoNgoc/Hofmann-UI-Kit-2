@@ -1,5 +1,5 @@
 /*NAVIGATION*/
-.main-nav-list {
+.main__menu {
   text-transform: uppercase;
   gap: 49px;
   font-size: 18px;
@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
 }
-
 .li {
   a {
     text-decoration: none;
@@ -15,35 +14,35 @@
     cursor: pointer;
   }
 }
-
 .li:hover {
   a {
     color: var(--light-yellow);
   }
 }
 /*ICONS*/
-.main-list-icons {
+.main__icons {
   display: flex;
   align-items: center;
 }
+
 .list-style {
-  gap: 32.94px;
+  gap: 15px;
   margin-top: 25px;
 }
-.medium {
+.main__icons--gap {
   gap: 42px;
 }
 @media (max-width: 1000px) {
   .medium {
     gap: 25px;
   }
-  .main-nav-list {
+  .main__menu {
     font-size: 12px;
   }
 }
 
 @media (max-width: 685px) {
-  .main-nav-list {
+  .main__menu {
     display: none;
   }
   .text {

@@ -1,27 +1,14 @@
 @use "../abstracts/" as *;
-.background-silver {
-  background: #4b4b4b;
-  color: white;
-}
-.background-light-yellow {
-  background: #ebcb80;
-}
-.silver {
-  color: #4b4b4b;
-}
-.light-yellow {
-  color: #ebcb80;
-}
 
-.fill-icons svg path {
+.icons--fill svg path {
   fill: $light-yellow;
 }
 @media screen and (max-width: 1000px) {
-  .fill-icons svg {
+  .icons--size svg {
     width: 18px;
     height: 18px;
   }
-  .icons-features svg {
+  .features__icons--size svg {
     width: 33px;
     height: 27px;
   }
@@ -29,7 +16,7 @@
 
 @media screen and (max-width: 685px) {
   /*icons navbar*/
-  .size-icons svg {
+  .main__icons--size svg {
     width: 20px;
     height: 16px;
     /*icons Features*/

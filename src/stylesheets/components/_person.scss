@@ -1,47 +1,68 @@
-.card-bg {
-  width: 40%;
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-}
-
 /*GIRD TEMPLATE*/
-.grid-template {
-  grid-template: 1fr 1fr / 1fr 1fr;
-  place-items: center;
-  display: grid;
+.testimonials {
   margin-top: 29px !important;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
+.testimonials__grid {
+  grid-template: 1fr 1fr / 1fr 1fr;
+  place-items: center;
+  display: grid;
+}
+.testimonials__items--content {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100% !important;
+  max-width: 554px;
+  padding: 41px;
+  display: flex;
+}
+.testimonials__items--hover:hover {
+  box-shadow: 0px 4px 16px 0px #00000033;
+}
+.testimonials__items--description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-align: start;
+  color: #4b4b4b;
+}
 @media screen and (max-width: 685px) {
-  .grid-template {
+  .testimonials__grid {
     grid-template: 1fr 1fr 1fr /1fr;
   }
 }
 
 /*BORDER RADIUS*/
-.person-border-radius-img {
+.person__img--size {
   width: 96px;
   height: 96px;
+}
+.person__img--circle {
   border: 2px solid #e6e6e6;
   border-radius: 50px;
 }
 @media screen and (max-width: 1000px) {
+  .testimonials__items--description {
+    font-size: 11px;
+  }
+
   /*BORDER RADIUS*/
-  .person-border-radius-img {
+  .person__img--size {
     width: 64px;
     height: 64px;
   }
 }
 @media screen and (max-width: 685px) {
-  .box-width {
-    padding: 15px;
-  }
   /*BORDER RADIUS*/
-  .person-border-radius-img {
+  .person__img--size {
     width: 48px;
     height: 48px;
+  }
+  .testimonials__items--content {
+    padding: 15px;
   }
 }

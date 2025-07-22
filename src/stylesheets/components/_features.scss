@@ -1,4 +1,4 @@
-.main-advantages {
+.features {
   max-width: 1200px;
   margin: 20px auto;
   display: flex;
@@ -8,7 +8,8 @@
   justify-content: space-evenly;
   padding: 10px;
 }
-.advantages {
+
+.features__items {
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
@@ -17,34 +18,27 @@
   padding: 5px;
   display: flex;
 }
-.box-width {
-  width: 100%;
-  padding: 41px;
-  max-width: 554px;
-}
+
 .box-width-2 {
   width: 100%;
   max-width: 1200px;
 }
-.advantages:hover {
+.features__items--hover:hover {
   box-shadow: 0px 4px 16px 0px #00000033;
 }
 .mac {
   width: 802px;
   height: 464px;
 }
-.padding {
-  padding: 20px;
-}
 
-.div-content {
+.content__flex {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 @media (max-width: 500px) {
-  .main-advantages {
+  .features {
     display: flex;
     flex-direction: column;
   }

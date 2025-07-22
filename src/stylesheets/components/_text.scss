@@ -1,52 +1,50 @@
-.font-content {
+.text__content--size-18 {
   font-size: 18px;
   margin-bottom: 27px;
 }
 .section {
   margin-top: 80px;
 }
-.font-content-2 {
+.text__content--small {
   font-size: 16px;
+}
+.text__content--white {
+  color: white;
+}
+.text__content--dark {
   font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 10px;
   text-align: start;
   color: #4b4b4b;
 }
-.font-content-3 {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 0;
-  line-height: 30px;
-  margin-bottom: 10px;
-  text-align: start;
-  color: #4b4b4b;
-}
-.text {
+
+.text__content--large {
   color: white;
   font-size: 44px;
   text-align: center;
-  line-height: 48px;
   margin-bottom: 31px;
 }
-.text-2 {
-  color: white;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 42px;
-}
-.text-3 {
+
+.text__content--size-64 {
   font-size: 64px;
   text-align: center;
 }
-.line-height {
+.text__content--lh-5 {
   line-height: 50px;
   margin-bottom: 24px;
 }
-.line-height-2 {
+.text__content--lh-1 {
   line-height: 18px;
 }
-.text-3::before {
+.text__content--lh-2 {
+  line-height: 24px;
+}
+.text__content--lh-3 {
+  line-height: 30px;
+}
+.text__content--lh-4 {
+  line-height: 48px;
+}
+.text__content--size-64::before {
   content: "$";
   top: -5px;
   font-size: 24px;
@@ -65,7 +63,7 @@
   margin-top: 32px;
   margin-bottom: 55px;
 }
-
+/* HR */
 .hr {
   text-align: start;
   color: #7d7d7d;

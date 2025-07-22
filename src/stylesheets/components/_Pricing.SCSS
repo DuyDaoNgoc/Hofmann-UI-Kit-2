@@ -1,3 +1,23 @@
+.pricing--gray {
+  background: #f6f6f6;
+  width: 100%;
+  height: auto;
+  padding: 68px;
+}
+.pricing__items--silver {
+  background: #4b4b4b;
+  color: white;
+}
+.pricing__items--light-yellow {
+  background: #ebcb80;
+}
+.pricing__text--silver {
+  color: #4b4b4b;
+}
+.pricing__text--light-yellow {
+  color: #ebcb80;
+}
+
 .main-card {
   box-shadow: none;
   justify-content: space-around;
@@ -100,51 +120,51 @@
   border-radius: 8px;
   position: absolute;
 }
-.select {
+.select--color {
   border: none;
   background: bottom;
   cursor: pointer;
 }
-.select:nth-child(2) {
+.select--color:nth-child(2) {
   background: #ebcb80;
   width: 80px;
   height: 24px;
   border-radius: 48px;
 }
-.select:hover:nth-child(2) {
+.select--color:hover:nth-child(2) {
   background: #ebcb80;
   width: 80px;
   height: 24px;
   border-radius: 48px;
 }
-.select:active:nth-child(2) {
+.select--color:active:nth-child(2) {
   background: #ebcb80;
   width: 80px;
   height: 24px;
   border-radius: 48px;
 }
-.select:hover:nth-child(1) {
+.select--color:hover:nth-child(1) {
   background: #4b4b4b;
   width: 80px;
   height: 24px;
   border-radius: 48px;
   color: white;
 }
-.select:active:nth-child(1) {
+.select--color:active:nth-child(1) {
   background: #4b4b4b;
   width: 80px;
   height: 24px;
   border-radius: 48px;
   color: white;
 }
-.select:hover:nth-child(3) {
+.select--color:hover:nth-child(3) {
   background: #4b4b4b;
   width: 80px;
   height: 24px;
   border-radius: 48px;
   color: white;
 }
-.select:active:nth-child(3) {
+.select--color:active:nth-child(3) {
   background: #4b4b4b;
   width: 80px;
   height: 24px;
