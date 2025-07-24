@@ -18,7 +18,7 @@
   color: #ebcb80;
 }
 
-.main-card {
+.pricing__container {
   box-shadow: none;
   justify-content: space-around;
   text-align: center;
@@ -120,6 +120,12 @@
   border-radius: 8px;
   position: absolute;
 }
+.pricing__content--practice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
 .select--color {
   border: none;
   background: bottom;
@@ -131,25 +137,14 @@
   height: 24px;
   border-radius: 48px;
 }
-.select--color:hover:nth-child(2) {
-  background: #ebcb80;
-  width: 80px;
-  height: 24px;
-  border-radius: 48px;
-}
+
 .select--color:active:nth-child(2) {
   background: #ebcb80;
   width: 80px;
   height: 24px;
   border-radius: 48px;
 }
-.select--color:hover:nth-child(1) {
-  background: #4b4b4b;
-  width: 80px;
-  height: 24px;
-  border-radius: 48px;
-  color: white;
-}
+
 .select--color:active:nth-child(1) {
   background: #4b4b4b;
   width: 80px;
@@ -157,13 +152,7 @@
   border-radius: 48px;
   color: white;
 }
-.select--color:hover:nth-child(3) {
-  background: #4b4b4b;
-  width: 80px;
-  height: 24px;
-  border-radius: 48px;
-  color: white;
-}
+
 .select--color:active:nth-child(3) {
   background: #4b4b4b;
   width: 80px;
@@ -174,19 +163,32 @@
 @media screen and (max-width: 1000px) {
   .card {
     max-width: 188px;
+    height: 280px;
   }
   .card:nth-child(1)::before {
-    height: 396px;
+    height: 280px;
+  }
+  .card:nth-child(1)::after {
+    height: 280px;
   }
   .card:nth-child(3)::before {
-    height: 396px;
+    height: 280px;
   }
   .card:nth-child(3)::after {
-    height: 396px;
+    height: 280px;
   }
 
   .card:nth-child(2)::before {
-    height: 396px;
+    height: 280px;
+  }
+  .card:nth-child(2)::after {
+    height: 280px;
+  }
+  .pricing__content--practice {
+    height: 240px;
+  }
+  .pricing__container {
+    height: 320px;
   }
 }
 
@@ -198,7 +200,7 @@
     max-width: 212px;
   }
   .card:nth-child(1)::before {
-    height: 396px;
+    height: 280px;
   }
   .card:nth-child(3) {
     z-index: 2;
@@ -206,7 +208,7 @@
     top: 8px;
   }
   .card:nth-child(3)::before {
-    height: 396px;
+    height: 280px;
   }
 
   .card:nth-child(2) {
@@ -216,6 +218,9 @@
     top: 45px;
   }
   .card:nth-child(2)::before {
-    height: 396px;
+    height: 280px;
+  }
+  .pricing--gray {
+    padding: 44px;
   }
 }

@@ -1,12 +1,25 @@
 .text__content--size-18 {
   font-size: 18px;
-  margin-bottom: 27px;
+}
+
+.text__content--small {
+  font-size: 16px;
+}
+.text__content--large {
+  color: white;
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+.text__content--size-32 {
+  font-size: 32px;
+}
+.text__content--size-64 {
+  font-size: 64px;
+  text-align: center;
 }
 .section {
   margin-top: 80px;
-}
-.text__content--small {
-  font-size: 16px;
 }
 .text__content--white {
   color: white;
@@ -17,21 +30,10 @@
   color: #4b4b4b;
 }
 
-.text__content--large {
-  color: white;
-  font-size: 44px;
-  text-align: center;
-  margin-bottom: 31px;
+.text__content--lh-6 {
+  line-height: 50px;
 }
 
-.text__content--size-64 {
-  font-size: 64px;
-  text-align: center;
-}
-.text__content--lh-5 {
-  line-height: 50px;
-  margin-bottom: 24px;
-}
 .text__content--lh-1 {
   line-height: 18px;
 }
@@ -39,25 +41,41 @@
   line-height: 24px;
 }
 .text__content--lh-3 {
-  line-height: 30px;
+  line-height: 27px;
 }
 .text__content--lh-4 {
+  line-height: 30px;
+}
+.text__content--lh-5 {
+  line-height: 42px;
+}
+.text__content--lh-6 {
   line-height: 48px;
 }
-.text__content--size-64::before {
-  content: "$";
-  top: -5px;
-  font-size: 24px;
-  position: relative;
-  left: -10px;
+.text__content--lh-7 {
+  line-height: 54px;
 }
+.text__content--items {
+  position: relative;
+}
+.text__content--items::before {
+  content: "$";
+  top: 0;
+  font-size: 24px;
+  position: absolute;
+  left: 30px;
+}
+
 .title {
   font-weight: 400;
   font-size: 44px;
   text-align: center;
   line-height: 48px;
 }
-.text-align {
+.title__content--size-18 {
+  font-size: 18px;
+}
+.text__content--ct {
   text-align: center;
   line-height: 30px;
   margin-top: 32px;
@@ -83,41 +101,55 @@
   top: 24px;
 }
 @media (max-width: 1000px) {
+  .text__content--size-32 {
+    font-size: 24px;
+  }
   .hr {
     font-size: 12px;
   }
-  .text-align {
+  .text__content--ct {
     margin-top: 22px;
     margin-bottom: 49px;
   }
-  .font-content-3 {
+  .title__content--size-18 {
     font-size: 12px;
   }
-  .list-style {
+  .product-list__item {
     gap: 15px;
   }
-  .font-content {
-    font-size: 12px;
-  }
-  .text-3 {
+
+  .text__content--size-64 {
     font-size: 36px;
   }
-  .font-content-2 {
+  .text__content--size-18 {
     font-size: 11px;
   }
   section p {
     font-size: 12px;
   }
-  .title {
+  .text__content--large {
     font-size: 32px;
   }
-  .text {
+  .title {
     font-size: 32px;
   }
 }
 @media (max-width: 685px) {
-  .text-align {
+  .text__content--size-64 {
+    font-size: 32px;
+  }
+  .text__content--size-32 {
+    font-size: 16px;
+  }
+  .text__content--ct {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .text-content--ct {
     margin-top: 3px;
+  }
+  .text__content--large {
+    font-size: 20px;
   }
   .title {
     font-size: 20px;

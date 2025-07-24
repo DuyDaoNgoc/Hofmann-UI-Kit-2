@@ -1,37 +1,105 @@
 <section class="section">
-  <h2 class="title">Portfolio</h2>
-  <div class="main-project-card">
+  <h2 class="title content--mgbt-4">Portfolio</h2>
+  <div class="card__container">
     <!--project 1-->
-    <figure class="project-card">
-      <img src="../assets/imgs/project/project-card-1.png" alt="" />
-    </figure>
-    <!--project 3-->
-    <figure class="project-card">
-      <img src="../assets/imgs/project/project-card-3.png" alt="" />
-    </figure>
-    <!--project 4-->
-    <figure class="project-card">
-      <img src="../assets/imgs/project/project-card-4.png" alt="" />
-    </figure>
-
+    <div class="card__items card__items--hover-dark">
+      <figure>
+        <img src="../assets/imgs/project/project-card-1.png" alt="" />
+      </figure>
+    </div>
     <!--project 2-->
-    <figure class="project-card">
-      <img src="../assets/imgs/project/project-card-2.png" alt="" />
-    </figure>
-    <!--project 5-->
-    <figure class="project-card">
-      <img src="../assets/imgs/project/project-card-5.png" alt="" />
-    </figure>
-    <div class="project-card">
-      <div>
-        <h3>Scenery Photos</h3>
-        <p>BY EVGENY METILAN</p>
-        <p>Wild Nature</p>
+    <div class="card__items card__items--hover-dark">
+      <figure>
+        <img src="../assets/imgs/project/project-card-3.png" alt="" />
+      </figure>
+      <div class="card__items--hover text__content--white">
+        <div>
+          <h3 class="text__content--size-32 text__content--lh-5">
+            Blue Mountains
+          </h3>
+          <p class="text__content--size-18 text__content--lh-4">
+            BY EVGENY METILAN
+          </p>
+        </div>
+        <div class="text__content--lh-2 portfolio__content--hr">
+          Planning a vacation to Europe? No doubt you have certain expectations
+          about your upcoming journey.
+        </div>
+        <!--ICONS CONTAINER-->
+        <div class="portfolio-icons--container">
+          <!--ICONS VIEWS-->
+          <div class="portfolio-icons--items">
+            <include src="icons/view.html"></include>
+            <p>92924</p>
+          </div>
+          <!--ICONS LIKES-->
+          <div class="portfolio-icons--items">
+            <include src="icons/like.html"></include>
+            <p>1273</p>
+          </div>
+          <!--ICONS COMMENTS-->
+          <div class="portfolio-icons--items">
+            <include src="icons/comments.html"></include>
+            <p>4894</p>
+          </div>
+        </div>
       </div>
     </div>
-    <!--project 6-->
-    <figure class="project-card">
-      <img src="../assets/imgs/project/project-card-6.png" alt="" />
+
+    <!--project 3-->
+    <div class="card__items card__items--hover-dark">
+      <figure>
+        <img src="../assets/imgs/project/project-card-4.png" alt="" />
+      </figure>
+    </div>
+    <!--project 4-->
+    <div class="card__items card__items--hover-dark">
+      <figure>
+        <img src="../assets/imgs/project/project-card-2.png" alt="" />
+      </figure>
+    </div>
+
+    <!--project 5-->
+    <figure class="card__items card__items--hover-dark">
+      <img src="../assets/imgs/project/project-card-5.png" alt="" />
     </figure>
+    <!--project 6-->
+    <div class="card__items">
+      <div class="card__items--flex">
+        <div>
+          <h3 class="text__content--size-32 text__content--lh-5">
+            Scenery Photos
+          </h3>
+          <p
+            class="text__content--size-18 text__content--dark text__content--lh-4"
+          >
+            BY EVGENY METILAN
+          </p>
+        </div>
+
+        <p
+          class="text__content--size-64 text__content--dark text__content--lh-7 card__items--hr"
+        >
+          Wild Nature
+        </p>
+      </div>
+    </div>
+    <!--project 7-->
+    <div class="card__items card__items--hover-dark">
+      <figure>
+        <img src="../assets/imgs/project/project-card-6.png" alt="" />
+      </figure>
+    </div>
+  </div>
+  <div class="card__form--actice">
+    <include src="icons/prev.html"></include>
+    <div>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+    <include src="icons/next.html"></include>
   </div>
 </section>
