@@ -42,6 +42,9 @@
 }
 
 @media (max-width: 685px) {
+  .main__icons--gap {
+    gap: 24px;
+  }
   .main__menu {
     display: none;
   }
