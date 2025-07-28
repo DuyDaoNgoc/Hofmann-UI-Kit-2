@@ -13,8 +13,14 @@
     height: 27px;
   }
 }
+.items__icons--size {
+  cursor: pointer !important;
+}
 
-@media screen and (max-width: 685px) {
+.items__icons--size svg path:active {
+  fill: $light-yellow;
+}
+@media screen and (max-width: 1000px) {
   /*icons navbar*/
   .items__icons--size svg {
     width: 20px;

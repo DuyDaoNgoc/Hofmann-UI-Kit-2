@@ -1,5 +1,5 @@
 <section>
-    <h3 class="title section">Portfolio</h3>
+    <h3 class="title main__content--mgt">Portfolio</h3>
     <div class="main-project-card">
         <!--project 1-->
         <figure class="project-card">

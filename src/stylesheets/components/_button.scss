@@ -1,5 +1,5 @@
 .btn {
-  width: 37%;
+  width: 86.5%;
   height: 48px;
   color: #4b4b4b;
   border: none;
@@ -9,19 +9,100 @@
   position: relative;
   z-index: 2;
 }
+.btn__background-2 {
+  width: 36.5%;
+  height: 48px;
+  color: #4b4b4b;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.scroll-down {
+  cursor: pointer;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+/* button Portfolio */
 .btn--active:active {
   color: #fff;
   box-shadow: -1px 1px 25px 6px;
 }
-
+.list__items--btn {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.items--btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.items--btn:active {
+  box-shadow: 0px 2px 4px 0px #00000033;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #ebcb80;
+}
+.items--btn:nth-child(4) {
+  box-shadow: 0px 2px 4px 0px #00000033;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #ebcb80;
+}
 @media screen and (max-width: 1000px) {
   .btn {
     font-size: 11px;
   }
+  .btn__background-2 {
+    font-size: 11px;
+    width: 30.5%;
+  }
 }
-
+/*  background 3*/
+.nav-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dots--active {
+  background: white;
+}
+.nav-dots--items {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+.nav-dots--items:active {
+  background: white;
+}
 @media screen and (max-width: 500px) {
   .btn {
     width: 60%;
+  }
+  .btn__background-2 {
+    height: 32px;
+    width: 49%;
+  }
+  .items--btn:nth-child(5) {
+    display: none;
+  }
+  .nav-dots {
+    flex-direction: row;
+    justify-content: center;
   }
 }
