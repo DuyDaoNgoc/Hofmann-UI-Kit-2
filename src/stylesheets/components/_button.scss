@@ -70,6 +70,9 @@
     font-size: 11px;
     width: 30.5%;
   }
+  .content__dot--items {
+    gap: 20px !important;
+  }
 }
 /*  background 3*/
 .nav-dots {
@@ -105,4 +108,15 @@
     flex-direction: row;
     justify-content: center;
   }
+  .content__dot--items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px !important;
+  }
+}
+
+.content__dot--items {
+  display: flex;
+  align-items: center;
+  gap: 89px;
 }

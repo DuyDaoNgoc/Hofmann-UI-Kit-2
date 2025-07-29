@@ -3,10 +3,22 @@
 .icons--fill svg path {
   fill: $light-yellow;
 }
+.icon--fill-phone svg path {
+  fill: #7d7d7d;
+}
+.icon--fill-phone svg {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (max-width: 1000px) {
   .icons--size svg {
     width: 18px;
     height: 18px;
+  }
+  .icon--fill-phone svg {
+    width: 21px;
+    height: 21px;
   }
   .features__icons--size svg {
     width: 33px;

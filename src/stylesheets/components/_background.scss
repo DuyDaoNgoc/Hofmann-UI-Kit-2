@@ -1,10 +1,10 @@
 /*background*/
-
 .wd-hg {
   width: 100%;
   height: 768px;
   overflow: hidden;
 }
+/*BACKGROUND 1 - 2*/
 .background {
   width: 100%;
   position: absolute;
@@ -14,15 +14,21 @@
   background-position: 50% 200px;
   filter: brightness(50%);
 }
+/*BACKGROUND 3*/
 .background-3 {
   background-image: url("../assets/imgs/background/background-3.png");
   background-size: cover;
+  background-position: left;
   width: 100%;
   height: 568px;
   overflow: hidden;
   padding: 10px;
   position: relative;
+  filter: brightness(0.9);
+  display: flex;
+  justify-content: flex-end;
 }
+
 .brightness {
   filter: brightness(100%);
 }

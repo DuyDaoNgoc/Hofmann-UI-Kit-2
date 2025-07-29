@@ -1,0 +1,123 @@
+.phone__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.phone img {
+  width: 360px;
+  height: 374px;
+}
+.phone {
+  position: relative;
+}
+.phone::after {
+  content: "";
+  background-image: url(../assets/imgs/phone/iphone-screen.png);
+  width: 319px;
+  height: 404px;
+  position: absolute;
+  left: 21px;
+  top: 58px;
+}
+.input--container {
+  gap: 73px;
+  display: flex;
+  flex-direction: column;
+}
+.input--phone {
+  border: none;
+  border-bottom: 1px solid #7d7d7d;
+}
+
+.email--phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 59px;
+}
+.btn--phone {
+  background: #ebcb80;
+  border: none;
+  width: 210px;
+  height: 48px;
+  border-radius: 50px;
+}
+.btn--phone:active {
+  color: #fff;
+  box-shadow: -1px 1px 25px 6px #ebcb80;
+}
+.address__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 213px;
+  gap: 23px;
+}
+.address--items {
+  display: flex;
+  gap: 9px;
+}
+.icons--address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.background--gray {
+  background: #d8d8d8;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment__items--background {
+  background:
+    linear-gradient(2deg, #ebcb80, #ebcb807d),
+    linear-gradient(202.52deg, #ffffffd6 15.01%, #fff0 112.53%);
+  width: 190px;
+  display: flex;
+  height: 82px;
+  padding: 10px;
+  box-shadow: 0 2px 4px #00000080;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+}
+.comment__items--background::after {
+  content: "";
+  border: 19px solid #d8d8d800;
+  border-top: 12px solid #ebcb80;
+  border-bottom-width: inherit;
+  position: absolute;
+  top: 100%;
+  left: 39%;
+}
+@media screen and (max-width: 1025px) {
+  .phone {
+    display: none;
+  }
+  .background--gray {
+    background: none;
+  }
+  .btn--phone {
+    font-size: 11px;
+    width: 46.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .address__container {
+    max-width: 246px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .address__container {
+    max-width: 304px;
+  }
+  .phone__container {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
