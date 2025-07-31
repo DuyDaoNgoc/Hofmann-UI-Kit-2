@@ -17,7 +17,7 @@
 .card__items--div {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 .card__items--hr {
   position: relative;
@@ -52,7 +52,7 @@
 }
 .card__items--hover-dark:hover .card__items--hover {
   position: absolute;
-  transform: translateY(-110%);
+  transform: translateY(-120%);
   transition:
     transform 0.3s ease,
     opacity 0.3s ease;
@@ -140,7 +140,7 @@
     left: 39%;
   }
   .card__container {
-    max-width: 891px;
+    max-width: 884px;
   }
   .portfolio__content--hr:before {
     height: 4px;
@@ -154,6 +154,9 @@
   .card__items--hr:after {
     top: 0%;
     height: 2px;
+  }
+  .card__container {
+    max-width: 700px;
   }
 
   .card__items--hover-dark:hover .card__items--hover {
@@ -172,6 +175,9 @@
   .card__form--actice {
     width: 100%;
   }
+  .card__items--div {
+    gap: 10px;
+  }
   .card__items--hover-dark:hover .card__items--hover {
     transform: translateY(-118%);
   }
@@ -189,12 +195,13 @@
   }
   .portfolio-icons--container {
     align-items: flex-start;
-    margin-top: 10px;
+    margin-top: 22px;
   }
   .card__container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 19%;
     grid-auto-rows: 19%;
+    max-width: 500px;
   }
   .card__items:nth-child(1) {
     grid-area: 1 / 2 / 2 / 3;
@@ -225,5 +232,14 @@
 @media screen and (max-width: 430px) {
   .card__items--hover-dark:hover .card__items--hover {
     transform: translateY(-84%);
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio__content--hr {
+    max-width: 214px;
+  }
+  .card__container {
+    max-width: 300px;
   }
 }

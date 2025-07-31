@@ -2,6 +2,9 @@
 .text__content--size-11 {
   font-size: 11px;
 }
+.text__content--size-12 {
+  font-size: 12px;
+}
 .text__content--size-18 {
   font-size: 18px;
 }
@@ -114,17 +117,28 @@
 .text__wrapper {
   flex-direction: column;
   gap: 20px;
-  max-width: 450px;
+  max-width: 477px;
   display: flex;
   position: relative;
-  top: 65%;
+  top: 50%;
   right: 1%;
   transform: translateY(-50%);
   justify-content: center;
+  padding: 20px;
+}
+.text__wrapper--ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (max-width: 1000px) {
+  .text__content--size-12 {
+    font-size: 11px;
+  }
   .text__wrapper {
-    max-width: 416px;
+    max-width: 420px;
   }
   .text__content--small {
     font-size: 11px;
@@ -166,16 +180,11 @@
     font-size: 24px;
   }
 }
-@media screen and (max-width: 768px) {
-  .text__wrapper {
-    top: 50% !important;
-  }
-}
+
 @media screen and (max-width: 1000px) {
   .text__wrapper {
     right: 20px;
     left: unset;
-    top: 65%;
     transform: translateY(-50%);
   }
 }

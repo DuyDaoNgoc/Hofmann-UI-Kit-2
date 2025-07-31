@@ -47,6 +47,8 @@
   border: none;
   background: none;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
 }
 .items--btn:active {
   box-shadow: 0px 2px 4px 0px #00000033;
@@ -111,7 +113,7 @@
   .content__dot--items {
     display: flex;
     flex-direction: column;
-    gap: 10px !important;
+    gap: 20px !important;
   }
 }
 

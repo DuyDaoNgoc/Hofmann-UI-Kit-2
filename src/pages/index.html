@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../stylesheets/main.scss" />
     <title>Hofmann-UI-Kit-Page-Templates</title>
   </head>
@@ -22,4 +23,12 @@
       <include src="layouts/footer.html"></include>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      delay: 100,
+      once: true,
+    });
+  </script>
 </html>

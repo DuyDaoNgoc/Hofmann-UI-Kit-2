@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px;
 }
 .phone img {
   width: 360px;
@@ -24,8 +25,13 @@
   display: flex;
   flex-direction: column;
 }
+.input--flex {
+  display: flex;
+  gap: 20px;
+}
 .input--phone {
   border: none;
+  width: 100%;
   border-bottom: 1px solid #7d7d7d;
 }
 .input--phone:focus {
@@ -43,6 +49,8 @@
   width: 210px;
   height: 48px;
   border-radius: 50px;
+  color: #3c3c3c;
+  cursor: pointer;
 }
 .btn--phone:active {
   color: #fff;
@@ -89,12 +97,12 @@
 }
 .comment__items--background::after {
   content: "";
-  border: 19px solid #d8d8d800;
-  border-top: 12px solid #ebcb80;
+  border: 11px solid #d8d8d800;
+  border-top: 13px solid #ebcb80;
   border-bottom-width: inherit;
   position: absolute;
-  top: 100%;
-  left: 39%;
+  top: 99%;
+  left: 43%;
 }
 @media screen and (max-width: 1025px) {
   .phone {
