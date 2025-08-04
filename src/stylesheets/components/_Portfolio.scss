@@ -133,7 +133,7 @@
 }
 @media screen and (max-width: 1036px) {
   .card__items--hover-dark:hover .card__items--hover {
-    transform: translateY(-110%);
+    transform: translateY(-100%);
   }
   .card__items--hover {
     width: 55%;
@@ -160,7 +160,7 @@
   }
 
   .card__items--hover-dark:hover .card__items--hover {
-    transform: translateY(-109%);
+    transform: translateY(-114%);
   }
   .card__items--hover {
     height: 189px;
@@ -179,7 +179,7 @@
     gap: 10px;
   }
   .card__items--hover-dark:hover .card__items--hover {
-    transform: translateY(-118%);
+    transform: translateY(-110%);
   }
   .card__items--hover {
     width: 90%;
