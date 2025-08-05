@@ -4,22 +4,28 @@
   height: auto;
   padding: 68px;
 }
+
 .pricing__items--silver {
   background: #4b4b4b;
   color: white;
 }
+
 .pricing__items--light-yellow {
   background: #ebcb80;
 }
+
 .pricing__text--silver {
   color: #4b4b4b;
 }
+
 .pricing__text--light-yellow {
   color: #ebcb80;
 }
+
 .items--content {
   font-size: 24px;
 }
+
 .pricing__container {
   box-shadow: none;
   justify-content: space-around;
@@ -27,7 +33,6 @@
   height: 436px;
   display: flex;
   margin: 40px auto;
-  padding: 20px;
   position: relative;
 }
 
@@ -122,6 +127,7 @@
   border-radius: 8px;
   position: absolute;
 }
+
 .pricing__content--practice {
   display: flex;
   flex-direction: column;
@@ -129,6 +135,7 @@
   height: 350px;
   align-items: center;
 }
+
 .pricing__items--flex {
   display: flex;
   flex-direction: row;
@@ -136,11 +143,13 @@
   gap: 2px;
   justify-content: center;
 }
+
 .select--color {
   border: none;
   background: bottom;
   cursor: pointer;
 }
+
 .select--color:nth-child(2) {
   background: #ebcb80;
   width: 80px;
@@ -170,23 +179,29 @@
   border-radius: 48px;
   color: white;
 }
+
 @media screen and (max-width: 1000px) {
   .items--content {
     font-size: 11px;
   }
+
   .card {
     max-width: 188px;
     height: 280px;
   }
+
   .card:nth-child(1)::before {
     height: 280px;
   }
+
   .card:nth-child(1)::after {
     height: 280px;
   }
+
   .card:nth-child(3)::before {
     height: 280px;
   }
+
   .card:nth-child(3)::after {
     height: 280px;
   }
@@ -194,18 +209,31 @@
   .card:nth-child(2)::before {
     height: 280px;
   }
+
   .card:nth-child(2)::after {
     height: 280px;
   }
+
   .pricing__content--practice {
     height: 240px;
   }
+
   .pricing__container {
     height: 320px;
   }
+
+  .pricing--gray {
+    padding: 60px;
+  }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
+  .pricing--gray {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 680px) {
   .card:nth-child(1) {
     z-index: 3;
     position: absolute;
@@ -232,8 +260,5 @@
   }
   .card:nth-child(2)::before {
     height: 280px;
-  }
-  .pricing--gray {
-    padding: 44px;
   }
 }

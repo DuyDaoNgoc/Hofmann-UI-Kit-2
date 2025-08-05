@@ -34,10 +34,14 @@
 .features__container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
-
-@media (max-width: 500px) {
+@media screen and (max-width: 1025px) {
+  .features__container {
+    gap: 50px;
+  }
+}
+@media (max-width: 680px) {
   .features__items {
     width: 100%;
   }

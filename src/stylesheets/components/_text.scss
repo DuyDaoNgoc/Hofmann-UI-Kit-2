@@ -133,6 +133,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.text__wrapper--ellipsis-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media (max-width: 1000px) {
   .text__content--size-12 {
     font-size: 11px;
