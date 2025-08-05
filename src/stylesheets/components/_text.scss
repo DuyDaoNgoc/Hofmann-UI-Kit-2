@@ -194,6 +194,9 @@
     left: unset;
     transform: translateY(-50%);
   }
+  .text__content--lh-2 {
+    line-height: 16px;
+  }
 }
 @media (max-width: 685px) {
   .text__content--size-64 {
