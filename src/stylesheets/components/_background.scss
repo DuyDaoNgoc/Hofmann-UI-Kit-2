@@ -154,6 +154,9 @@
   .background-3 {
     height: 356px;
   }
+  .background-2 {
+    height: 588px;
+  }
 
   .wd-hg {
     height: 564px;
@@ -173,6 +176,9 @@
     gap: 0;
     width: 50%;
   }
+  .content__title-2 {
+    top: 15%;
+  }
 }
 @media screen and (max-width: 1293px) {
   .content__title {
@@ -185,9 +191,6 @@
 }
 
 @media (max-width: 685px) {
-  .content__title-2 {
-    top: 20%;
-  }
   .pricing--gray {
     padding: 30px;
   }
