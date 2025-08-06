@@ -141,6 +141,9 @@
   text-overflow: ellipsis;
 }
 @media (max-width: 1000px) {
+  .main__content--mgt {
+    margin-top: 40px;
+  }
   .text__content--size-12 {
     font-size: 11px;
   }
