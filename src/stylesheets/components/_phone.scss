@@ -42,6 +42,7 @@
   flex-direction: column;
   align-items: center;
   gap: 59px;
+  padding: 10px;
 }
 .btn--phone {
   background: #ebcb80;
@@ -51,6 +52,8 @@
   border-radius: 50px;
   color: #3c3c3c;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .btn--phone:active {
   color: #fff;
@@ -114,6 +117,7 @@
   .btn--phone {
     font-size: 11px;
     width: 46.5%;
+    height: 32px;
   }
 }
 
@@ -129,5 +133,11 @@
   .phone__container {
     flex-direction: column;
     gap: 35px;
+  }
+  .input--container {
+    gap: 30px;
+  }
+  .email--phone {
+    gap: 30px;
   }
 }
