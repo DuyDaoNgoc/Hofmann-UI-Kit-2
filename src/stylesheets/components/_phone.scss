@@ -135,6 +135,12 @@
     width: 46.5%;
     height: 32px;
   }
+  .input--container {
+    gap: 25px;
+  }
+  .email--phone {
+    gap: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -3,7 +3,7 @@
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  padding: 20px 30px;
+  padding: 55px 30px;
   margin: 0 auto;
   display: flex;
   overflow: hidden;
@@ -56,5 +56,12 @@
     width: 290px;
     height: 168.32px;
     margin-top: 37px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .features {
+    padding-top: 30px;
+    padding-bottom: 15px;
   }
 }
