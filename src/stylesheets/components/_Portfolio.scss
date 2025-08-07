@@ -89,6 +89,7 @@
   display: flex;
   background: #f6f6f6;
   z-index: 2;
+  justify-content: center;
 }
 .card__items:nth-child(7) {
   grid-column: 3 / 5;
@@ -152,8 +153,8 @@
 
 @media screen and (max-width: 768px) {
   .card__items--hr:after {
-    top: 0%;
-    height: 2px;
+    height: 3px;
+    top: -30%;
   }
   .card__container {
     max-width: 700px;
@@ -172,6 +173,9 @@
 }
 
 @media screen and (max-width: 680px) {
+  .card__items--flex {
+    padding: 0;
+  }
   .card__form--actice {
     width: 100%;
   }

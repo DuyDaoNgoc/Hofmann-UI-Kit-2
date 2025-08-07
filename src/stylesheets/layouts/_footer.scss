@@ -5,9 +5,9 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: 40px 0;
+  padding: 40px 24px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer--logo {
@@ -58,7 +58,7 @@
 }
 .nav__footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .nav__footer--items {
   color: #fff;
@@ -83,6 +83,7 @@
 .icons--items-ft {
   display: flex;
   gap: 41px;
+  cursor: pointer;
 }
 .content--ft-flex {
   display: none;

@@ -1,12 +1,12 @@
 .features {
-  max-width: 1200px;
-
-  display: flex;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
+  max-width: 1200px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  display: flex;
   overflow: hidden;
-  justify-content: space-evenly;
-  padding: 10px;
 }
 
 .features__items {
@@ -44,6 +44,9 @@
 @media (max-width: 680px) {
   .features__items {
     width: 100%;
+  }
+  .features__container {
+    gap: 20px;
   }
   .features {
     display: flex;

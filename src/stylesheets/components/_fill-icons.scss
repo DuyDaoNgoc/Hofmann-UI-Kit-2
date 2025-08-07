@@ -10,7 +10,9 @@
   width: 24px;
   height: 24px;
 }
-
+.icon--fill-phone {
+  cursor: pointer;
+}
 @media screen and (max-width: 1000px) {
   .icons--size svg {
     width: 18px;

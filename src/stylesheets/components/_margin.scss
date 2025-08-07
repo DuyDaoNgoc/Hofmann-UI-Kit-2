@@ -13,10 +13,16 @@
 .content--mgbt-4 {
   margin-bottom: 42px;
 }
+.content--pdt {
+  padding-top: 80px;
+}
 
 @media (max-width: 1025px) {
   .content--mgbt-3,
   .content--mgbt-4 {
     margin-bottom: 20px;
+  }
+  .content--pdt {
+    padding-top: 20px;
   }
 }

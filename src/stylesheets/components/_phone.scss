@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
+  padding: 20px 20px 0 20px;
 }
 .phone img {
   width: 360px;
@@ -33,6 +33,7 @@
   border: none;
   width: 100%;
   border-bottom: 1px solid #7d7d7d;
+  font-size: 18px;
 }
 .input--phone:focus {
   outline: none;
@@ -63,18 +64,26 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 213px;
+  max-width: 278px;
   gap: 23px;
 }
 .address--items {
   display: flex;
   gap: 9px;
+  align-items: flex-start;
+}
+.address--items:nth-child(2) {
+  align-items: center;
 }
 .icons--address {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.icons--address img {
+  cursor: pointer;
+}
+
 .background--gray {
   background: #d8d8d8;
   width: 100%;
@@ -108,11 +117,18 @@
   left: 43%;
 }
 @media screen and (max-width: 1025px) {
+  .address--items {
+    align-items: center;
+  }
   .phone {
     display: none;
   }
   .background--gray {
-    background: none;
+    background: white;
+    height: 216px;
+  }
+  .input--phone {
+    font-size: 11px;
   }
   .btn--phone {
     font-size: 11px;
