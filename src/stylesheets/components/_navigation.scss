@@ -1,3 +1,4 @@
+@use "../abstracts/" as *;
 /*NAVIGATION*/
 .main__menu {
   text-transform: uppercase;
@@ -6,54 +7,35 @@
   height: 22px;
   display: flex;
   align-items: center;
-}
-.li {
-  a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  @include tablet {
+    font-size: 12px;
+  }
+  @include mobile {
+    display: none;
   }
 }
-.li:hover {
-  a {
+.li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  &:hover {
     color: var(--light-yellow);
   }
 }
+
 /*ICONS*/
 .main__icons {
   display: flex;
   align-items: center;
-}
+  &--gap {
+    gap: 42px;
 
+    @include mobile {
+      gap: 24px;
+    }
+  }
+}
 .product-list__item {
   gap: 15px;
   margin-top: 25px;
-}
-.main__icons--gap {
-  gap: 42px;
-}
-@media (max-width: 1000px) {
-  .medium {
-    gap: 25px;
-  }
-  .main__menu {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 685px) {
-  .main__icons--gap {
-    gap: 24px;
-  }
-  .main__menu {
-    display: none;
-  }
-  .text {
-    font-size: 20px !important;
-  }
-  .hambuger {
-    cursor: pointer;
-
-    display: block;
-  }
 }

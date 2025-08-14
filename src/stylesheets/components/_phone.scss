@@ -1,50 +1,86 @@
-.phone__container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px 20px 0 20px;
-}
-.phone img {
-  width: 360px;
-  height: 374px;
-}
+@use "../abstracts/" as *;
 .phone {
   position: relative;
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+  & img {
+    width: 360px;
+    height: 374px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+    @include mobile {
+      flex-direction: column;
+      gap: 35px;
+      padding-bottom: 20px;
+    }
+  }
+  &::after {
+    content: "";
+    background-image: url(../assets/imgs/phone/iphone-screen.png);
+    width: 319px;
+    height: 404px;
+    position: absolute;
+    left: 21px;
+    top: 58px;
+  }
 }
-.phone::after {
-  content: "";
-  background-image: url(../assets/imgs/phone/iphone-screen.png);
-  width: 319px;
-  height: 404px;
-  position: absolute;
-  left: 21px;
-  top: 58px;
+.input {
+  &--container {
+    gap: 73px;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      gap: 25px;
+    }
+    @include mobile {
+      gap: 30px;
+    }
+  }
+  &--flex {
+    display: flex;
+    gap: 20px;
+  }
+  &--phone {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #7d7d7d;
+    font-size: 18px;
+    &:focus {
+      outline: none;
+    }
+    @include tablet {
+      font-size: 11px;
+    }
+    @include mobile {
+      font-size: 11px;
+    }
+  }
 }
-.input--container {
-  gap: 73px;
-  display: flex;
-  flex-direction: column;
+
+.email {
+  &--phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 59px;
+    padding: 10px;
+    @include desktop {
+      gap: 25px;
+    }
+    @include tablet {
+      gap: 30px;
+    }
+  }
 }
-.input--flex {
-  display: flex;
-  gap: 20px;
-}
-.input--phone {
-  border: none;
-  width: 100%;
-  border-bottom: 1px solid #7d7d7d;
-  font-size: 18px;
-}
-.input--phone:focus {
-  outline: none;
-}
-.email--phone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 59px;
-  padding: 10px;
-}
+
 .btn--phone {
   background: #ebcb80;
   border: none;
@@ -55,33 +91,46 @@
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
+  &:active {
+    color: #fff;
+    box-shadow: -1px 1px 25px 6px #ebcb80;
+  }
+  @include tablet {
+    font-size: 11px;
+    width: 46.5%;
+    height: 32px;
+  }
 }
-.btn--phone:active {
-  color: #fff;
-  box-shadow: -1px 1px 25px 6px #ebcb80;
-}
-.address__container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 278px;
-  gap: 23px;
-}
-.address--items {
-  display: flex;
-  gap: 9px;
-  align-items: flex-start;
-}
-.address--items:nth-child(2) {
-  align-items: center;
+.address {
+  &--items {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    @include tablet {
+      align-items: center;
+    }
+    @include mobile {
+      max-width: 304px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 278px;
+    gap: 23px;
+    &:nth-child(2) {
+      align-items: center;
+    }
+  }
 }
 .icons--address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.icons--address img {
-  cursor: pointer;
+  & img {
+    cursor: pointer;
+  }
 }
 
 .background--gray {
@@ -93,6 +142,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include tablet {
+    background: white;
+    height: 216px;
+  }
+  @include mobile {
+    background: white;
+    height: 216px;
+  }
 }
 .comment__items--background {
   background:
@@ -106,60 +163,13 @@
   align-items: center;
   border-radius: 10px;
   position: relative;
-}
-.comment__items--background::after {
-  content: "";
-  border: 11px solid #d8d8d800;
-  border-top: 13px solid #ebcb80;
-  border-bottom-width: inherit;
-  position: absolute;
-  top: 99%;
-  left: 43%;
-}
-@media screen and (max-width: 1025px) {
-  .address--items {
-    align-items: center;
-  }
-  .phone {
-    display: none;
-  }
-  .background--gray {
-    background: white;
-    height: 216px;
-  }
-  .input--phone {
-    font-size: 11px;
-  }
-  .btn--phone {
-    font-size: 11px;
-    width: 46.5%;
-    height: 32px;
-  }
-  .input--container {
-    gap: 25px;
-  }
-  .email--phone {
-    gap: 25px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .address__container {
-    max-width: 246px;
-  }
-}
-@media screen and (max-width: 680px) {
-  .address__container {
-    max-width: 304px;
-  }
-  .phone__container {
-    flex-direction: column;
-    gap: 35px;
-  }
-  .input--container {
-    gap: 30px;
-  }
-  .email--phone {
-    gap: 30px;
+  &:after {
+    content: "";
+    border: 11px solid #d8d8d800;
+    border-top: 13px solid #ebcb80;
+    border-bottom-width: inherit;
+    position: absolute;
+    top: 99%;
+    left: 43%;
   }
 }

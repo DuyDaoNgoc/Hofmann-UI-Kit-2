@@ -9,3 +9,11 @@ $bold-font: "Roboto Bold";
 
 /*FOOTER*/
 $footer: #4b4b4b;
+
+//RESPONSIZE
+$small: 600px;
+$mobiles: calc($small - 1px);
+$medium: 599px;
+$extra-large: 1440px;
+$desktop: calc($extra-large + 0px);
+$tablet: calc($extra-large - 440px);

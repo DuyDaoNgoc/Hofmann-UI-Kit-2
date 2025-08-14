@@ -1,3 +1,4 @@
+@use "../abstracts/" as *;
 .features {
   justify-content: space-around;
   align-items: center;
@@ -7,61 +8,64 @@
   margin: 0 auto;
   display: flex;
   overflow: hidden;
-}
-
-.features__items {
-  justify-content: center;
-  align-items: flex-start;
-  gap: 15px;
-  width: 314px;
-  // max-width: 554px;
-  padding: 5px;
-  display: flex;
-}
-.features__items:hover {
-  box-shadow: 0px 4px 16px 0px #00000033;
+  &__icons--size svg {
+    @include tablet {
+      width: 33px;
+      height: 27px;
+    }
+    @include mobile {
+      width: 33px;
+      height: 27px;
+    }
+  }
+  &__items {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    width: 323px;
+    // max-width: 554px;
+    height: 26.8%;
+    padding: 5px;
+    display: flex;
+    &:hover {
+      box-shadow: 0px 4px 16px 0px #00000033;
+      padding: 3%;
+      @include mobile {
+        padding: 2.5%;
+      }
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include tablet {
+      gap: 50px;
+    }
+    @include mobile {
+      gap: 20px;
+    }
+  }
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
 }
 .layout__full--width {
   width: 100%;
   max-width: 1200px;
 }
-
 .mac {
   width: 802px;
   height: 464px;
-}
-
-.features__container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-@media screen and (max-width: 1025px) {
-  .features__container {
-    gap: 50px;
-  }
-}
-@media (max-width: 680px) {
-  .features__items {
-    width: 100%;
-  }
-  .features__container {
-    gap: 20px;
-  }
-  .features {
-    display: flex;
-    flex-direction: column;
-  }
-  .mac {
+  @include mobile {
     width: 290px;
     height: 168.32px;
     margin-top: 37px;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .features {
-    padding-top: 30px;
-    padding-bottom: 15px;
   }
 }

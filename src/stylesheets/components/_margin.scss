@@ -1,3 +1,4 @@
+@use "../abstracts/" as *;
 .content--mgbt-0 {
   margin-bottom: 5px;
 }
@@ -12,17 +13,19 @@
 }
 .content--mgbt-4 {
   margin-bottom: 42px;
+  @include tablet {
+    margin-bottom: 20px;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
 }
 .content--pdt {
   padding-top: 80px;
-}
-
-@media (max-width: 1025px) {
-  .content--mgbt-3,
-  .content--mgbt-4 {
-    margin-bottom: 20px;
+  @include tablet {
+    padding-top: 20px;
   }
-  .content--pdt {
+  @include mobile {
     padding-top: 20px;
   }
 }
