@@ -66,6 +66,8 @@
     }
     @include mobile {
       height: calc(73vw * 1.2);
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -134,7 +136,7 @@
   margin-bottom: 24px !important;
   width: 43%;
   @include tablet {
-    width: 70%;
+    width: 49%;
   }
   @include mobile {
     width: 100%;

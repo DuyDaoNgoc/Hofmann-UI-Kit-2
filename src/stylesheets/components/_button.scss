@@ -106,6 +106,12 @@
     justify-content: center;
   }
 }
+.dots--active {
+  background: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 .content__dot--items {
   display: flex;
   align-items: center;

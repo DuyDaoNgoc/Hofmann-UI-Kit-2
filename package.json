@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel ./src/pages/index.html"
+    "dev": "parcel ./src/pages/index.html --host ui-kit.com "
   },
   "keywords": [],
   "author": "",

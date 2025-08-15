@@ -32,6 +32,7 @@
     border-radius: 5px 0 0 5px;
     color: white;
     padding: 10px;
+    outline: none;
     @include tablet {
       width: 158px;
       height: 26px;
@@ -40,10 +41,11 @@
       width: 158px;
       height: 26px;
     }
+    &::focus {
+      outline: none;
+    }
   }
-  &--input::focus {
-    outline: none;
-  }
+
   &--btn {
     background: #ebcb80;
     width: 51px;

@@ -100,6 +100,11 @@
     width: 46.5%;
     height: 32px;
   }
+  @include mobile {
+    font-size: 11px;
+    width: 46.5%;
+    height: 32px;
+  }
 }
 .address {
   &--items {
@@ -111,6 +116,9 @@
     }
     @include mobile {
       max-width: 304px;
+    }
+    &:nth-child(2) {
+      align-items: center;
     }
   }
   &__container {

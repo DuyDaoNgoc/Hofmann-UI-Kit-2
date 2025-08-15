@@ -10,6 +10,12 @@
 }
 .content--mgbt-3 {
   margin-bottom: 42px;
+  @include tablet {
+    margin-bottom: 20px;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
 }
 .content--mgbt-4 {
   margin-bottom: 42px;
