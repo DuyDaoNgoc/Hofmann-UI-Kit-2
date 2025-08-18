@@ -1,118 +1,128 @@
-<section class="main__content--mgt" id="Portfolio">
-  <h2 class="title content--mgbt-4" data-aos="fade-up">Portfolio</h2>
-  <div class="card__container">
-    <!--project 1-->
-
-    <figure class="card__items card__items--hover-dark" data-aos="fade-up">
-      <img src="../assets/imgs/project/project-card-1.png" alt="" />
-    </figure>
-
-    <!--project 2-->
-    <div class="card__items card__items--hover-dark" data-aos="fade-up">
-      <figure>
-        <img src="../assets/imgs/project/project-card-3.png" alt="" />
+<each loop="items in {{ list }}">
+  <section class="main__content--mgt" id="Portfolio">
+    <h2 class="title content--mgbt-4" data-aos="fade-up">{{ items.title }}</h2>
+    <div class="card__container">
+      <!--project 1-->
+      <figure class="card__items card__items--hover-dark" data-aos="fade-up">
+        <img
+          src="../assets/imgs/project/project-{{ items.card1 }}.png"
+          alt=""
+        />
       </figure>
-      <div class="card__items--hover text__content--white">
-        <div class="card__items--div">
+      <!--project 2-->
+      <div class="card__items card__items--hover-dark" data-aos="fade-up">
+        <figure>
+          <img
+            src="../assets/imgs/project/project-{{ items.card3 }}.png"
+            alt=""
+          />
+        </figure>
+        <div class="card__items--hover text__content--white">
+          <div class="card__items--div">
+            <div>
+              <h3
+                class="text__content--size-32 text__content--lh-5 text__wrapper--ellipsis-3"
+              >
+                {{ items.subtitle }}
+              </h3>
+              <p
+                class="text__content--size-18 text__content--lh-4"
+                style="letter-spacing: 1px"
+              >
+                {{ items.date}}
+              </p>
+            </div>
+            <div
+              class="text__content--lh-2 portfolio__content--hr text__content--small"
+            >
+              <p>{{ items.content }}</p>
+            </div>
+          </div>
+          <!--ICONS CONTAINER-->
+          <div class="portfolio-icons--container">
+            <!--ICONS VIEWS-->
+            <div class="portfolio-icons--items">
+              <include src="icons/view.html"></include>
+              <p class="text__content--size-12">{{ items.view }}</p>
+            </div>
+            <!--ICONS LIKES-->
+            <div class="portfolio-icons--items">
+              <include src="icons/like.html"></include>
+              <p class="text__content--size-12">{{ items.like }}</p>
+            </div>
+            <!--ICONS COMMENTS-->
+            <div class="portfolio-icons--items">
+              <include src="icons/comments.html"></include>
+              <p class="text__content--size-12">{{ items.comments }}</p>
+            </div>
+            <!--ICONS VIEWS 2-->
+            <div class="icons--hiden">
+              <include src="icons/view.html"></include>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--project 3-->
+      <figure class="card__items card__items--hover-dark" data-aos="fade-up">
+        <img
+          src="../assets/imgs/project/project-{{ items.card4 }}.png"
+          alt=""
+        />
+      </figure>
+      <!--project 4-->
+      <figure class="card__items card__items--hover-dark" data-aos="fade-up">
+        <img
+          src="../assets/imgs/project/project-{{ items.card2 }}.png"
+          alt=""
+        />
+      </figure>
+      <!--project 5-->
+      <figure class="card__items card__items--hover-dark" data-aos="fade-up">
+        <img
+          src="../assets/imgs/project/project-{{ items.card5 }}.png"
+          alt=""
+        />
+      </figure>
+      <!--project 6-->
+      <div class="card__items" data-aos="fade-up">
+        <div class="card__items--flex">
           <div>
             <h3
               class="text__content--size-32 text__content--lh-5 text__wrapper--ellipsis-3"
             >
-              Blue Mountains
+              {{ items.card7_title }}
             </h3>
             <p
-              class="text__content--size-18 text__content--lh-4"
-              style="letter-spacing: 1px"
+              class="text__content--size-18 text__content--dark text__content--lh-4"
             >
-              17 Apr 2016
+              {{ items.card7_subtitle }}
             </p>
           </div>
-          <div
-            class="text__content--lh-2 portfolio__content--hr text__content--small"
-          >
-            <p>
-              Planning a vacation to Europe? No doubt you have certain
-              expectations about your upcoming journey.
-            </p>
-          </div>
-        </div>
-
-        <!--ICONS CONTAINER-->
-        <div class="portfolio-icons--container">
-          <!--ICONS VIEWS-->
-          <div class="portfolio-icons--items">
-            <include src="icons/view.html"></include>
-            <p class="text__content--size-12">92924</p>
-          </div>
-          <!--ICONS LIKES-->
-          <div class="portfolio-icons--items">
-            <include src="icons/like.html"></include>
-            <p class="text__content--size-12">1273</p>
-          </div>
-          <!--ICONS COMMENTS-->
-          <div class="portfolio-icons--items">
-            <include src="icons/comments.html"></include>
-            <p class="text__content--size-12">4894</p>
-          </div>
-          <!--ICONS VIEWS 2-->
-          <div class="icons--hiden">
-            <include src="icons/view.html"></include>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--project 3-->
-    <figure class="card__items card__items--hover-dark" data-aos="fade-up">
-      <img src="../assets/imgs/project/project-card-4.png" alt="" />
-    </figure>
-
-    <!--project 4-->
-
-    <figure class="card__items card__items--hover-dark" data-aos="fade-up">
-      <img src="../assets/imgs/project/project-card-2.png" alt="" />
-    </figure>
-
-    <!--project 5-->
-    <figure class="card__items card__items--hover-dark" data-aos="fade-up">
-      <img src="../assets/imgs/project/project-card-5.png" alt="" />
-    </figure>
-    <!--project 6-->
-    <div class="card__items" data-aos="fade-up">
-      <div class="card__items--flex">
-        <div>
-          <h3
-            class="text__content--size-32 text__content--lh-5 text__wrapper--ellipsis-3"
-          >
-            Scenery Photos
-          </h3>
           <p
-            class="text__content--size-18 text__content--dark text__content--lh-4"
+            class="text__content--size-64 text__content--dark text__content--lh-7 card__items--hr"
           >
-            BY EVGENY METILAN
+            {{ items.card7_content }}
           </p>
         </div>
-
-        <p
-          class="text__content--size-64 text__content--dark text__content--lh-7 card__items--hr"
-        >
-          Wild Nature
-        </p>
       </div>
+      <!--project 7-->
+      <figure class="card__items card__items--hover-dark" data-aos="fade-up">
+        <img
+          src="../assets/imgs/project/project-{{ items.card6 }}.png"
+          alt=""
+        />
+      </figure>
     </div>
-    <!--project 7-->
-    <figure class="card__items card__items--hover-dark" data-aos="fade-up">
-      <img src="../assets/imgs/project/project-card-6.png" alt="" />
-    </figure>
-  </div>
-  <div class="card__form--actice">
-    <include src="icons/prev.html"></include>
-    <div class="list__items--btn">
-      <button class="items--btn">1</button>
-      <button class="items--btn">2</button>
-      <button class="items--btn">3</button>
-      <button class="items--btn">4</button>
-      <button class="items--btn">5</button>
+    <div class="card__form--actice">
+      <include src="icons/prev.html"></include>
+      <div class="list__items--btn">
+        <button class="items--btn">1</button>
+        <button class="items--btn">2</button>
+        <button class="items--btn">3</button>
+        <button class="items--btn">4</button>
+        <button class="items--btn">5</button>
+      </div>
+      <include src="icons/next.html"></include>
     </div>
-    <include src="icons/next.html"></include>
-  </div>
-</section>
+  </section>
+</each>

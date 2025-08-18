@@ -1,6 +1,8 @@
-<ul class="main__menu">
-  <li class="li"><a href="#">Hotels </a></li>
-  <li class="li"><a href="#"> Airlines</a></li>
-  <li class="li"><a href="#Portfolio"> Vacation</a></li>
-  <li class="li"><a href="#"> Find More</a></li>
-</ul>
+<each loop="items in {{ list }} ">
+  <ul class="main__menu">
+    <li class="li"><a href="#">{{ items.hotels }}</a></li>
+    <li class="li"><a href="#"> {{ items.airlines }}</a></li>
+    <li class="li"><a href="#Portfolio"> {{ items.vacation }}</a></li>
+    <li class="li"><a href="#"> {{ items.find_more }}</a></li>
+  </ul>
+</each>

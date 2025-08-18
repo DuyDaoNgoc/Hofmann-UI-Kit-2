@@ -1,86 +1,99 @@
-<section class="pricing--gray main__content--mgt" data-aos="fade-up">
-  <h3 class="title" data-aos="fade-up">Choose Your Plan</h3>
-  <div class="pricing__container layout__full--width">
-    <div class="card pricing__items--silver" data-aos="fade-up">
-      <div class="pricing__content--practice">
-        <p class="title__content--size-18 pricing__text--light-yellow">
-          SILVER
-        </p>
-        <div>
-          <p
-            class="text__content--size-64 text__content--items pricing__items--flex"
-          >
-            <span class="items--content">$</span> 49
+<each loop="items in {{ list }}">
+  <section class="pricing--gray main__content--mgt" data-aos="fade-up">
+    <h3 class="title" data-aos="fade-up">{{ items.title }}</h3>
+    <div class="pricing__container layout__full--width">
+      <div class="card pricing__items--silver" data-aos="fade-up">
+        <div class="pricing__content--practice">
+          <p class="title__content--size-18 pricing__text--light-yellow">
+            {{ items.subtitle1 }}
           </p>
-          <p class="text__content--size-18 text__content--lh-3">YEAR</p>
-        </div>
-        <div class="text__content--size-18">
-          <p>Personal Account</p>
-          <p>25 GB Discspace</p>
-          <p>50 Uploads per day</p>
-        </div>
-        <button class="btn btn--active pricing__items--light-yellow">
-          PURCHASE
-        </button>
-      </div>
-    </div>
-    <div class="card pricing__items--light-yellow" data-aos="fade-up">
-      <div class="pricing__content--practice">
-        <p class="text__content--size-18">GOLD</p>
-        <div>
-          <p
-            class="text__content--size-64 text__content--items pricing__text--silver pricing__items--flex"
-          >
-            <span class="items--content">$</span> 99
-          </p>
-
-          <p class="text__content--size-18 text__content--lh-3">YEAR</p>
-        </div>
-
-        <div class="text__content--size-18">
-          <p>Personal Account</p>
-          <p>50 GB Discspace</p>
-          <p>500 Uploads per day</p>
-        </div>
-        <button class="btn btn--active pricing__items--silver">PURCHASE</button>
-      </div>
-    </div>
-    <div class="card pricing__items--silver" data-aos="fade-up">
-      <div class="pricing__content--practice">
-        <p class="title__content--size-18 pricing__text--light-yellow">
-          PLATINUM
-        </p>
-        <div>
           <div>
             <p
               class="text__content--size-64 text__content--items pricing__items--flex"
             >
-              <span class="items--content">$</span> 299
+              <span class="items--content">{{ items.dola }}</span>
+              {{items.price1 }}
+            </p>
+            <p class="text__content--size-18 text__content--lh-3">
+              {{ items.year }}
+            </p>
+          </div>
+          <div class="text__content--size-18">
+            <p>{{ items.silver_content1 }}</p>
+            <p>{{ items.silver_content2 }}</p>
+            <p>{{ items.silver_content3 }}</p>
+          </div>
+          <button class="btn btn--active pricing__items--light-yellow">
+            {{ items.btn }}
+          </button>
+        </div>
+      </div>
+      <div class="card pricing__items--light-yellow" data-aos="fade-up">
+        <div class="pricing__content--practice">
+          <p class="text__content--size-18">{{ items.subtitle2 }}</p>
+          <div>
+            <p
+              class="text__content--size-64 text__content--items pricing__text--silver pricing__items--flex"
+            >
+              <span class="items--content">{{ items.dola }}</span>
+              {{items.price2 }}
+            </p>
+
+            <p class="text__content--size-18 text__content--lh-3">
+              {{ items.year }}
             </p>
           </div>
 
-          <p class="text__content--size-18 text__content--lh-3">YEAR</p>
+          <div class="text__content--size-18">
+            <p>{{ items.gold_content1 }}</p>
+            <p>{{ items.gold_content2 }}</p>
+            <p>{{ items.gold_content3 }}</p>
+          </div>
+          <button class="btn btn--active pricing__items--silver">
+            {{items.btn }}
+          </button>
         </div>
-        <div class="text__content--size-18">
-          <p>Team Account</p>
-          <p>500 GB Discspace</p>
-          <p>Unlimited Uploads per day</p>
+      </div>
+      <div class="card pricing__items--silver" data-aos="fade-up">
+        <div class="pricing__content--practice">
+          <p class="title__content--size-18 pricing__text--light-yellow">
+            {{ items.subtitle3 }}
+          </p>
+          <div>
+            <div>
+              <p
+                class="text__content--size-64 text__content--items pricing__items--flex"
+              >
+                <span class="items--content">{{ items.dola }}</span>
+                {{ items.price3 }}
+              </p>
+            </div>
+
+            <p class="text__content--size-18 text__content--lh-3">
+              {{ items.year }}
+            </p>
+          </div>
+          <div class="text__content--size-18">
+            <p>{{ items.platinum_content1 }}</p>
+            <p>{{ items.platinum_content2 }}</p>
+            <p>{{ items.platinum_content3 }}</p>
+          </div>
+          <button class="btn btn--active pricing__items--light-yellow">
+            {{items.btn }}
+          </button>
         </div>
-        <button class="btn btn--active pricing__items--light-yellow">
-          PURCHASE
-        </button>
       </div>
     </div>
-  </div>
-  <div class="text__content--ct hambuger">
-    <button class="select--color text__content--size-18" data-aos="fade-up">
-      silver
-    </button>
-    <button class="select--color text__content--size-18" data-aos="fade-up">
-      GOLD
-    </button>
-    <button class="select--color text__content--size-18" data-aos="fade-up">
-      PLATINUM
-    </button>
-  </div>
-</section>
+    <div class="text__content--ct hambuger">
+      <button class="select--color text__content--size-18" data-aos="fade-up">
+        {{ items.subtitle1 }}
+      </button>
+      <button class="select--color text__content--size-18" data-aos="fade-up">
+        {{ items.subtitle2 }}
+      </button>
+      <button class="select--color text__content--size-18" data-aos="fade-up">
+        {{ items.subtitle3 }}
+      </button>
+    </div>
+  </section>
+</each>

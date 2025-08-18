@@ -11,7 +11,19 @@
       <h1 class="logo"><a href="#"> H. </a></h1>
     </div>
     <!---navigation-->
-    <include src="components/navigation.html"></include>
+    <include
+      src="components/navigation.html"
+      locals='
+    {
+    "list" :[{
+     "hotels": "Hotels",
+     "airlines": "Airlines",
+      "vacation": "Vacation",
+      "find_more": "Find More"
+    }]
+    }
+    '
+    ></include>
     <!---ICONS-->
     <div class="main__icons main__icons--gap">
       <!--TWITTER--->
@@ -33,5 +45,13 @@
     </div>
   </header>
   <!---VIDEO FRAME-->
-  <include src="components/video-frame.html"></include>
+  <include
+    src="components/video-frame.html"
+    locals='{
+  "list" : [
+  {
+  "title" : "See The Unmatched Beauty Of The Great Lakes"
+  }]
+  }'
+  ></include>
 </section>

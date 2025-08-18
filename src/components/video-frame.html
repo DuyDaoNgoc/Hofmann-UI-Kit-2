@@ -1,33 +1,33 @@
-<section class="content__title">
-  <h2 class="text__content--large text--min">
-    See The Unmatched Beauty Of The Great Lakes
-  </h2>
-  <div class="main--video">
-    <img
-      src="../assets/imgs/phone/video-frame.png"
-      alt=""
-      class="video-frame"
-    />
-    <button class="play--button"></button>
-  </div>
-  <!--scroll-down-->
-  <div class="scroll-down">
-    <a href="#main">
-      <svg
-        width="18"
-        height="9"
-        viewBox="0 0 18 9"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        style="cursor: pointer"
-      >
-        <path
-          d="M1 1.00488L9 7.67155L17 1"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-      </svg>
-    </a>
-  </div>
-</section>
+<each loop="items in {{ list }}">
+  <section class="content__title">
+    <h2 class="text__content--large text--min">{{items.title}}</h2>
+    <div class="main--video">
+      <img
+        src="../assets/imgs/phone/video-frame.png"
+        alt=""
+        class="video-frame"
+      />
+      <button class="play--button"></button>
+    </div>
+    <!--scroll-down-->
+    <div class="scroll-down">
+      <a href="#main">
+        <svg
+          width="18"
+          height="9"
+          viewBox="0 0 18 9"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="cursor: pointer"
+        >
+          <path
+            d="M1 1.00488L9 7.67155L17 1"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </a>
+    </div>
+  </section>
+</each>

@@ -1,65 +1,72 @@
-<section class="main__content--mgt" id="main">
-  <div>
-    <h2 class="title" data-aos="fade-up">Features</h2>
-    <p class="text__content--ct text__content--size-18" data-aos="fade-up">
-      WE’RE TAKING IT TO THE NEXT LEVEL
-    </p>
-  </div>
-  <div class="features">
-    <div class="features__container">
-      <!--content 1-->
-      <div class="features__items" data-aos="fade-up">
-        <!---DESKTOP PHONE-->
-        <div class="features__icons--size">
-          <include src="icons/desktop.html"></include>
-        </div>
-        <div>
-          <h2 class="text__content--size-18 content--mgbt-0">
-            RESPONSIVE LAYOUT
-          </h2>
-          <p class="testimonials__items--description text__wrapper--ellipsis-2">
-            The past few years have seen a dramatic change in the public
-            perception of cosmetic surgery.
-          </p>
-        </div>
-      </div>
-      <!--content 2-->
-      <div class="features__items" data-aos="fade-up">
-        <!---DIAMOND-->
-        <div class="features__icons--size">
-          <include src="icons/diamond.html"></include>
-        </div>
-        <div>
-          <h2 class="text__content--size-18 content--mgbt-0">PIXEL PERFECT</h2>
-          <p class="testimonials__items--description text__wrapper--ellipsis-2">
-            About 64% of all on-line teens say that do things online that they
-            wouldn’t want their parents to know about.
-          </p>
-        </div>
-      </div>
-      <!--content 3-->
-      <div class="features__items" data-aos="fade-up">
-        <div class="features__icons--size">
-          <!--LAYERS-->
-          <include src="icons/layer.html"></include>
-        </div>
-        <div>
-          <h2 class="text__content--size-18 content--mgbt-0">
-            ORGANIZED LAYERS
-          </h2>
-          <p class="testimonials__items--description text__wrapper--ellipsis-2">
-            Are you one of the thousands of Iphone owners who has no idea that
-            they can get free games for their Iphone?
-          </p>
-        </div>
-      </div>
+<each loop=" items in {{ list }}">
+  <section class="main__content--mgt" id="main">
+    <div>
+      <h2 class="title" data-aos="fade-up">{{ items.title }}</h2>
+      <p class="text__content--ct text__content--size-18" data-aos="fade-up">
+        {{ items.subtitle }}
+      </p>
     </div>
-    <!--content img-->
-    <img
-      src="../assets/imgs/phone/mac.png"
-      alt=""
-      class="mac"
-      data-aos="fade-up"
-    />
-  </div>
-</section>
+    <div class="features">
+      <div class="features__container">
+        <!--content 1-->
+        <div class="features__items" data-aos="fade-up">
+          <!---DESKTOP PHONE-->
+          <div class="features__icons--size">
+            <include src="icons/desktop.html"></include>
+          </div>
+          <div>
+            <h2 class="text__content--size-18 content--mgbt-0">
+              {{ items.subtile_phone }}
+            </h2>
+            <p
+              class="testimonials__items--description text__wrapper--ellipsis-2"
+            >
+              {{items.content_phone}}
+            </p>
+          </div>
+        </div>
+        <!--content 2-->
+        <div class="features__items" data-aos="fade-up">
+          <!---DIAMOND-->
+          <div class="features__icons--size">
+            <include src="icons/diamond.html"></include>
+          </div>
+          <div>
+            <h2 class="text__content--size-18 content--mgbt-0">
+              PIXEL PERFECT
+            </h2>
+            <p
+              class="testimonials__items--description text__wrapper--ellipsis-2"
+            >
+              {{ items.content_diamon }}
+            </p>
+          </div>
+        </div>
+        <!--content 3-->
+        <div class="features__items" data-aos="fade-up">
+          <div class="features__icons--size">
+            <!--LAYERS-->
+            <include src="icons/layer.html"></include>
+          </div>
+          <div>
+            <h2 class="text__content--size-18 content--mgbt-0">
+              {{ items.subtitle_layer }}
+            </h2>
+            <p
+              class="testimonials__items--description text__wrapper--ellipsis-2"
+            >
+              {{ items.content_layer }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--content img-->
+      <img
+        src="../assets/imgs/phone/{{ items.mac }}.png"
+        alt=""
+        class="mac"
+        data-aos="fade-up"
+      />
+    </div>
+  </section>
+</each>

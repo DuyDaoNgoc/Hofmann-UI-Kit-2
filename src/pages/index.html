@@ -30,7 +30,17 @@
       <!--RENDER MAIN CONTENTS-->
       <include src="layouts/main.html"></include>
       <!--RENDER FOOTER-->
-      <include src="layouts/footer.html"></include>
+      <include
+        src="layouts/footer.html"
+        locals=' {
+      "list" : [
+      {
+      "logo" : "HOFMANN",
+      "content" : " Hoffman UI Kit was made to help you quickly create beautiful layouts of responsive websites.",
+      "subtitle" : "© 2016 Created by Goldenfox",
+      "subscribe" : "SUBSCRIBE TO OUR NEWS"
+      }]}'
+      ></include>
     </div>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
